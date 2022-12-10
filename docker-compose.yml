@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  clinic:
+    container_name: clinic
+    image: vet_clinic:latest
+    restart: on-failure
+    ports:
+      - '8000:8000'
+
